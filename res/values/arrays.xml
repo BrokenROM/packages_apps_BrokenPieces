@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Pure Nexus Project
+<!-- Copyright (C) 2015 BrokenROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,16 +13,19 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-	<ListPreference
-        android:key="advanced_reboot"
-        android:title="@string/advanced_reboot_title"
-        android:dialogTitle="@string/advanced_reboot_dialog_title"
-        android:entries="@array/advanced_reboot_entries"
-        android:entryValues="@array/advanced_reboot_values"
-        android:summary="@string/advanced_reboot_summary"
-        android:persistent="false" />
+    <!-- Advanced reboot menu dev options -->
+    <string-array name="advanced_reboot_entries">
+        <item>@string/advanced_reboot_disabled</item>
+        <item>@string/advanced_reboot_hide_on_keyguard</item>
+        <item>@string/advanced_reboot_show_always</item>
+    </string-array>
 
-</PreferenceScreen>
+    <string-array name="advanced_reboot_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
