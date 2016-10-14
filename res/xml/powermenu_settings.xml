@@ -14,18 +14,6 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:title="@string/broken_settings_title" >
-
-    <PreferenceCategory
-        android:key="broken_buttons"
-        android:title="@string/broken_buttons">
-
-        <PreferenceScreen
-            android:fragment="com.broken.settings.fragments.PowerMenuSettings"
-            android:key="broken_powermenu_settings"
-            android:title="@string/powermenu_settings_title"/>
-
-    </PreferenceCategory>
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
 </PreferenceScreen>
